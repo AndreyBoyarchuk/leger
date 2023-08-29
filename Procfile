@@ -1,2 +1,2 @@
-web: gunicorn djangoInt.wsgi
+web: gunicorn leger.wsgi
 
