@@ -1,0 +1,58 @@
+:root {
+    --beje: #fff8e9;
+    --monarch: #8B0723;
+    --fuscous-gray: #54534D;
+    --Cyan: #00bcd4;
+    --Sky-Blue: #ecf0f1;
+    --Deep_Teal: #e9c8b6;
+    --Navy_Blue: #001f3f;
+    --background-color:  #f7f4ef;
+      --primary-color: #0A4158;
+  --secondary-color: #4B8378;
+  --success-color: #E4D7D0;
+  --danger-color: #FF9636;
+  --warning-color: #D37506;
+  --info-color: #ADA7A7;
+  --light-color: #F2F2F2;
+
+
+}
+
+
+.inside_plain {
+
+  border: 1px solid var(--monarch);
+  width: 100%;
+}
+
+
+.inside {
+height: 90%;
+  border: 1px solid var(--monarch);
+  padding: 20px;
+  background-color: var(--light-color);
+  margin-right: -10px; /*set the corner on the right side*/
+    position: relative;  /* Add this line */
+  top: -10px;  /* Adjust this value to move the div upwards */
+}
+
+.inside_back {
+
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0;  /* Changed from -25px to 0 */
+  padding-left: 10px; /* Offsets left side */
+  padding-right: 0;  /* Changed from -15px to 0 */
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--monarch),
+    var(--monarch) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.footer {
+   background-color: var(--light-color);
+}

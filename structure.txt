@@ -1,0 +1,40 @@
+leger
+|   |-- .env
+|   blog
+|   |   |-- admin.py
+|   |   |-- apps.py
+|   |   migrations
+|   |   |   |-- __init__.py
+|   |   |-- models.py
+|   |   |-- tests.py
+|   |   |-- views.py
+|   |   |-- __init__.py
+|   |-- db.sqlite3
+|   leger
+|   |   |-- asgi.py
+|   |   |-- settings.py
+|   |   |-- urls.py
+|   |   |-- views.py
+|   |   |-- wsgi.py
+|   |   |-- __init__.py
+|   |-- manage.py
+|   reports
+|   |   |-- admin.py
+|   |   |-- apps.py
+|   |   migrations
+|   |   |   |-- __init__.py
+|   |   |-- models.py
+|   |   |-- tests.py
+|   |   |-- views.py
+|   |   |-- __init__.py
+|   static
+|   |   css
+|   |   |   |-- navbar.css
+|   |   images
+|   |   |   |-- logo.svg
+|   |-- structure.txt
+|   templates
+|   |   |-- base.html
+|   |   |-- index.html
+|   |   |-- navbar.html
+|   |-- treefiles.py
