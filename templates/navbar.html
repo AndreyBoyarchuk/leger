@@ -1,53 +1,104 @@
-{% load static %}
-<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-    <a class="navbar-logo" href="/">
-        <img src="{% static 'images/logo.svg' %}" alt="Logo" width="150">
-    </a>
-    <span class="navbar-brand mb-0 h1" href="/"></span>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse  justify-content-center" id="navbarNavDropdown">
-        <ul class="navbar-nav ">
-            <li class="nav-item {% if request.path == '/' %}active{% endif %}">
-                <a class="nav-link custom-nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item {% if request.path == '/about_us/' %}active{% endif %}">
-                <a class="nav-link custom-nav-link" href="/about_us/">About Us</a>
-            </li>
-            <li class="nav-item {% if request.path == '/pricing/' %}active{% endif %}">
-                <a class="nav-link custom-nav-link" href="/pricing/">Pricing</a>
-            </li>
-            <!-- For Dropdown, it's a bit more complicated and might need Javascript to handle "active" state -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle {% if request.path == '/seorganizer/' or request.path == '/taxprep/' or request.path == '/dataserv/' %}active{% endif %}"
-                   href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item {% if request.path == '/seorganizer/' %}active{% endif %}"
-                       href="/seorganizer/">SE Organizer</a>
-                    <a class="dropdown-item {% if request.path == '/taxprep/' %}active{% endif %}" href="/taxprep/">Tax
-                        Preparation</a>
-                    <a class="dropdown-item {% if request.path == '/dataserv/' %}active{% endif %}" href="/dataserv/">Data
-                        Analysis</a>
-                </div>
-            </li>
-
-        </ul>
-
-     <div class="button-container ml-auto"> <!-- Add ml-auto here -->
-{#            <a href="{% url 'login' %}">#}
-    <button class="btn btn-outline-success btn-portal" type="button">Login</button>
-
-{#            <a href="{% url 'upload' %}">#}
-    <button class="btn btn-outline-success btn-portal" type="button">Secure Upload</button>
-
-
-
+<div>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/dangerous-html/dist/default/lib.umd.js"
+  ></script>
+  <link href="./navbar.css" rel="stylesheet" />
+  <nav class="navbar-navbar">
+    <div class="navbar-desktop">
+      <div class="navbar-main">
+        <div class="navbar-branding">
+          <a href="index.html" class="navbar-navlink">
+            <img
+              alt="pastedImage"
+              src="public/pastedimage-cx4wqj.svg"
+              class="navbar-finbest"
+            />
+          </a>
+        </div>
+        <div class="navbar-links">
+          <a href="index.html" class="link"><span>Features</span></a>
+          <a href="index.html" class="link"><span>How it works</span></a>
+          <a href="index.html" class="link"><span>Prices</span></a>
+          <a href="index.html" class="link"><span>Contact</span></a>
+        </div>
+      </div>
+      <div class="navbar-quick-actions">
+        <a href="index.html" class="link navbar-log-in">Log in</a>
+        <a href="index.html" class="navbar-navlink1">
+          <div class="navbar-sign-up-btn">
+            <span class="navbar-sign-up">Sign up</span>
+          </div>
+        </a>
+        <img
+          id="open-mobile-menu"
+          alt="pastedImage"
+          src="public/pastedimage-8o98.svg"
+          class="navbar-hamburger-menu"
+        />
+      </div>
     </div>
-
+    <div id="mobile-menu" class="navbar-mobile">
+      <div class="navbar-top">
+        <img
+          alt="image"
+          src="public/pastedimage-cx4wqj.svg"
+          class="navbar-image"
+        />
+        <svg id="close-mobile-menu" viewBox="0 0 1024 1024" class="navbar-icon">
+          <path
+            d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+          ></path>
+        </svg>
+      </div>
+      <div class="navbar-links1">
+        <a href="index.html" class="navbar-navlink2"><span>Features</span></a>
+        <a href="index.html" class="navbar-navlink3">
+          <span>How it works</span>
+        </a>
+        <a href="index.html" class="navbar-navlink4"><span>Prices</span></a>
+        <a href="index.html" class="navbar-navlink5"><span>Contact</span></a>
+        <div class="navbar-buttons">
+          <a href="index.html" class="navbar-navlink6">
+            <div class="navbar-btn">
+              <span class="navbar-text"><span>Log in</span></span>
+            </div>
+          </a>
+          <a href="index.html" class="navbar-navlink7">
+            <div class="navbar-btn1">
+              <span class="navbar-text1"><span>Sign up</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-</nav>
+    <div>
+      <dangerous-html
+        html=" <script>
+    /*
+    Mobile menu - Code Embed
+    */
+
+    // Mobile menu
+    const mobileMenu = document.querySelector('#mobile-menu');
+
+    // Buttons
+    const closeButton = document.querySelector('#close-mobile-menu');
+    const openButton = document.querySelector('#open-mobile-menu');
+
+    if (mobileMenu && closeButton && openButton) {
+      // On openButton click, set the mobileMenu position left to -100vw
+      openButton.addEventListener('click', function () {
+        mobileMenu.style.transform = 'translateX(0%)';
+      });
+
+      // On closeButton click, set the mobileMenu position to 0vw
+      closeButton.addEventListener('click', function () {
+        mobileMenu.style.transform = 'translateX(100%)';
+      });
+    }
+  </script>"
+      ></dangerous-html>
+    </div>
+  </nav>
+</div>

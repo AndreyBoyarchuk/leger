@@ -9,7 +9,7 @@
   </style>{% endcomment %}
 <nav class="nav-wrapper vert_nav">
   <ul class="nav flex-column">
-    <li class="nav-item {% if request.path == '/dataprog/' %}active{% endif %}">
+    <li class="nav-item  {% if request.path == '/dataprog/' %}active{% endif %}">
       <a class="nav-link v_nav" href='/dataprog/'><i class="fas fa-chart-line"></i> Data Analytis</a>
     </li>
     <li class="nav-item {% if request.path == '/s_corporation/' %}active{% endif %}">
@@ -21,6 +21,18 @@
     <li class="nav-item {% if request.path == '/quickbooks/' %}active{% endif %}">
       <a class="nav-link v_nav" href='/quickbooks/'><i class="fas fa-calculator"></i> Accounting Systems</a>
     </li>
+ <div class="container m-3 p-4 inner-border ">
+     <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Example label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Another label</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+  </div>
+</form>
+ </div>
 
 {#<img src="{% static 'images/computer.svg' %}" alt="My Image" width="300" height="300">#}
   </ul>

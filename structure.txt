@@ -1,5 +1,6 @@
 leger
 |   |-- .env
+|   |-- .gitignore
 |   blog
 |   |   |-- admin.py
 |   |   |-- apps.py
@@ -18,6 +19,7 @@ leger
 |   |   |-- wsgi.py
 |   |   |-- __init__.py
 |   |-- manage.py
+|   |-- Procfile
 |   reports
 |   |   |-- admin.py
 |   |   |-- apps.py
@@ -27,14 +29,30 @@ leger
 |   |   |-- tests.py
 |   |   |-- views.py
 |   |   |-- __init__.py
+|   |-- requirements.txt
 |   static
 |   |   css
+|   |   |   |-- content.css
 |   |   |   |-- navbar.css
 |   |   images
+|   |   |   |-- accountingdash.svg
+|   |   |   |-- background1.svg
+|   |   |   |-- computer.svg
+|   |   |   |-- dots.svg
+|   |   |   |-- hero.svg
+|   |   |   |-- LogNew2.svg
 |   |   |   |-- logo.svg
+|   |   |   |-- LoogNew1.svg
+|   |   |   |-- net.svg
+|   |   javascript
+|   |   |   |-- navbar.js
 |   |-- structure.txt
 |   templates
+|   |   |-- about_us.html
 |   |   |-- base.html
+|   |   |-- footer.html
 |   |   |-- index.html
 |   |   |-- navbar.html
+|   |   |-- pricing.html
+|   |   |-- sidebar.html
 |   |-- treefiles.py
