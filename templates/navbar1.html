@@ -1,6 +1,6 @@
 {% load static %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-logo" href="/">
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-logo m-3" href="/">
         <img src="{% static 'images/LogNew2.svg' %}" alt="Logo" width="350">
     </a>
     <span class="navbar-brand mb-0 h1" href="/"></span>
@@ -9,12 +9,12 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav m-2">
             <li class="nav-item {% if request.path == '/' %}active{% endif %}">
                 <a class="nav-link custom-nav-link" href="/">Home</a>
             </li>
             <li class="nav-item {% if request.path == '/about_us/' %}active{% endif %}">
-                <a class="nav-link custom-nav-link" href="/about_us/">About Us</a>
+                <a class="nav-link custom-nav-link " href="/about_us/">About Us</a>
             </li>
             <li class="nav-item {% if request.path == '/pricing/' %}active{% endif %}">
                 <a class="nav-link custom-nav-link" href="/pricing/">Pricing</a>
