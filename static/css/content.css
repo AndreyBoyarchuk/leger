@@ -55,4 +55,5 @@ height: 90%;
 
 .footer {
    background-color: var(--light-color-30);
+    padding: 1px;
 }
