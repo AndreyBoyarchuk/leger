@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ledgernest-c805af24d555.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['ledgernest-c805af24d555.herokuapp.com','127.0.0.1','web-production-4926.up.railway.app','www.ledgernest.us','www.ledgernest.com']
 
 # Application definition
 
